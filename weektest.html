@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Keyboard Event Listener</title>
+</head>
+<body>
+	<input type="text" id="text-input">
+  <input type="text" id="ans">
+	<script>
+		document.addEventListener("keypress", function (event)
+         {
+			// Get the code of the key that was pressed
+			var keyCode = event.charCode;
+
+			// Set the value of the text input to the key code
+			document.getElementById("text-input").value=" you pressed  " + event.key;
+            document.getElementById("ans").value= event.charCode;
+            // document.body.input.style.background="red"
+            document.getElementById("text-input").style.textColor = "blue"; 
+            console.log("keyCode")
+		});
+	</script>
+</body>
+</html>
+ <!-- console.log(e.code);
+  console.log(e.key);
+  console.log(e.charCode);
+  console.log(e.keyCode); -->
